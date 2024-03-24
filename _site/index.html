@@ -7,6 +7,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- For Form -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#submit").click(function(e) {
+                e.preventDefault();
+
+                var name = $("#name").val(),
+                    email = $("#email").val(),
+                    phone = $("#phone").val(),
+                    wsource = $("#wsource").val(),
+                    desc = $("#desc").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: 'https://6632bs8ve0.execute-api.us-east-1.amazonaws.com/TestAPI/contact-us',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        'name': name,
+                        'phone':phone,
+                        'email': email,
+                        'desc': desc,
+                        'wsource': "www.Sassafrasnewport.com Contact_EmailCapture"
+                    }),
+                    success: function(res){
+                        $('#form-response').text('Thank You -  Message Sent. We will be in touch shortly');
+                        
+					
+                    },
+                    error: function(){
+                        $('#form-response').text('Error.');
+                    }
+                });
+
+            })
+
+        });
+    </script>
+    
 	</head>
 	<body class="is-preload">
 
@@ -173,26 +213,32 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="GET" action="#"  data-form-type="contact" onsubmit="button.disabled = true; return true;">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name ="name" id="name" data-constraints="@Required" />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text"  name ="email" id="email" data-constraints="@Required" />
+										</div>
+										<div class="field half">
+											<label for="phone">Telephone</label>
+											<input type="text"  name ="phone" id="phone" data-constraints="@Required" />
 										</div>
 										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<label for="desc">Message</label>
+											<textarea  name = "desc" id="desc" rows="6"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										
+										<button  class="primary"  button  id="submit"  type="submit"></i>Send Message</button>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
+								 <div id="form-response"></div>
 							</section>
 							<section class="split">
 								<section>
