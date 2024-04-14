@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #c5d3d2;
+		background: #fffffe;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
@@ -168,7 +168,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #000000;
 		font-weight: 600;
 	}
 
@@ -181,7 +181,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -1784,7 +1784,7 @@ input, select, textarea {
 
 			header.major > :first-child:after {
 				content: '';
-				background-color: #c5d3d2;
+				background-color: #fffffe;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
@@ -1890,7 +1890,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #000000;
 		display: block;
 		font-size: 0.8em;
 		font-weight: 600;
@@ -1956,8 +1956,8 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
-			background: #c5d3d2;
+			color: #000000;
+			background: #fffffe;
 		}
 
 		select:focus::-ms-value {
@@ -1999,7 +1999,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #ffffff;
+			color: #000000;
 			cursor: pointer;
 			display: inline-block;
 			font-weight: 300;
@@ -2040,10 +2040,10 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #ffffff;
+			background: #000000;
 			border-color: #9bf1ff;
 			content: '\f00c';
-			color: #c5d3d2;
+			color: #fffffe;
 		}
 
 		input[type="checkbox"]:focus + label:before,
@@ -2133,9 +2133,9 @@ input, select, textarea {
 		}
 
 		.icon.alt:before {
-			background-color: #ffffff;
+			background-color: #000000;
 			border-radius: 100%;
-			color: #c5d3d2;
+			color: #fffffe;
 			display: inline-block;
 			height: 2em;
 			line-height: 2em;
@@ -2398,12 +2398,12 @@ input, select, textarea {
 
 				ul.pagination li > .page.active {
 					background-color: #333856;
-					color: #c5d3d2;
+					color: #fffffe;
 				}
 
 					ul.pagination li > .page.active:hover {
 						background-color: #333856;
-						color: #c5d3d2 !important;
+						color: #fffffe !important;
 					}
 
 					ul.pagination li > .page.active:active {
@@ -2516,8 +2516,8 @@ input, select, textarea {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #ffffff;
+		box-shadow: inset 0 0 0 2px #000000;
+		color: #000000;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2671,9 +2671,9 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
+			background-color: #000000;
 			box-shadow: none;
-			color: #c5d3d2;
+			color: #fffffe;
 		}
 
 			input[type="submit"].primary:hover, input[type="submit"].primary:active,
@@ -2686,7 +2686,7 @@ input, select, textarea {
 			.button.primary:hover,
 			.button.primary:active {
 				background-color: #9bf1ff;
-				color: #c5d3d2 !important;
+				color: #fffffe !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2831,7 +2831,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #c5d3d2;
+				background-color: #fffffe;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
@@ -2938,7 +2938,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #c5d3d2;
+			background-color: #fffffe;
 		}
 
 			.spotlights > section > .image {
@@ -3000,7 +3000,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #c5d3d2;
+				background-color: #fffffe;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3114,7 +3114,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #c5d3d2;
+		background-color: #fffffe;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3145,7 +3145,7 @@ input, select, textarea {
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				background-color: #ffffff;
-				color: #c5d3d2;
+				color: #fffffe;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -3157,7 +3157,7 @@ input, select, textarea {
 			}
 
 			#header .logo:active strong {
-				background-color: #c5d3d2;
+				background-color: #fffffe;
 			}
 
 		#header nav {
@@ -3186,6 +3186,7 @@ input, select, textarea {
 				padding: 0 0.75em;
 				position: relative;
 				vertical-align: middle;
+				
 			}
 
 				#header nav a:last-child {
@@ -3194,10 +3195,11 @@ input, select, textarea {
 
 				#header nav a[href="#menu"] {
 					padding-right: 3.325em !important;
+					
 				}
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
-						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
+						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23000000%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: 24px 32px;
@@ -3209,6 +3211,8 @@ input, select, textarea {
 						top: 0;
 						vertical-align: middle;
 						width: 24px;
+						
+						
 					}
 
 					#header nav a[href="#menu"]:after {
@@ -3219,10 +3223,12 @@ input, select, textarea {
 						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %239bf1ff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						opacity: 0;
 						z-index: 1;
+						
 					}
 
 					#header nav a[href="#menu"]:hover:after, #header nav a[href="#menu"]:active:after {
 						opacity: 1;
+						
 					}
 
 					#header nav a[href="#menu"]:last-child {
@@ -3231,6 +3237,7 @@ input, select, textarea {
 
 						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
 							right: 2em;
+							color:black; 
 						}
 
 		#header.reveal {
@@ -3290,6 +3297,7 @@ input, select, textarea {
 
 			#header nav a[href="#menu"] {
 				padding-right: 3.75em !important;
+				color: #000000;
 			}
 
 				#header nav a[href="#menu"]:last-child {
@@ -3410,7 +3418,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #c5d3d2;
+			background-color: #fffffe;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3491,11 +3499,11 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #c5d3d2;
+			background-color: #fffffe;
 		}
 
 		#banner.style2:after {
-			background-color: #c5d3d2;
+			background-color: #fffffe;
 		}
 
 		#banner.style3:after {
@@ -3589,7 +3597,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #c5d3d2;
+		background-color: #fffffe;
 	}
 
 		#main > * {
